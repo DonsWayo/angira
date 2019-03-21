@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    <div class="content-side">
+      <img src="https://www.methoda.co.il/wp-content/uploads/2016/08/jira-expert-new-trans-450x212.png" class="responsive-logo">
+      <mat-nav-list>
+        <mat-list-item *ngFor="let folder of folders">
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <h4 mat-line>{{folder.name}}</h4>
+          <p mat-line> {{folder.updated | date}} </p>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-toolbar></app-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,25 @@
+mat-sidenav-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+mat-sidenav {
+  width: 250px;
+}
+
+.content-side{
+  padding: 10%;
+}
+
+.responsive-logo {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+}
+
